@@ -1,0 +1,27 @@
+/* BODY */
+
+.mainTitle{
+    background-color: black;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.blockInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+}
+
+.paragrafo{
+    font-size: 38px;
+    text-align: justify;
+}
+
+.img{
+    max-width: 50%;
+}

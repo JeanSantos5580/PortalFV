@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DIMENSIONAMENTO FV</title>
+
+    <link rel="stylesheet" href="style/style-menu.css">
+
+    <link rel="stylesheet" href="style/style-dimensionamento.css">
+
+    <script src="js/dimensionamento.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="container-logo">
+                <img class="img-logo" src="assets/logo.png" alt="">
+                <div class="nome-unifap">UNIFAP</div>
+            </div>
+
+            
+
+            <ul class="nav-list">
+
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+
+                <li>
+                    <a href="dimensionamento.html">DIMENSIONAMENTO</a>
+                </li>
+
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+
+        <div class="mainTitle">DIMENSIONAMENTO DE SISTEMA FOTOVOLTAICO</div>
+
+        <form class="form" method="GET" action="">
+
+            <div>
+                <label class="tag-nome" for="tipoSistema">
+                    Selecione o tipo de sistema:
+                </label>
+
+                <select name="tipoSistema" id="tipoSistema">
+                    <option value="" selected></option>
+                    <option value="On-Grid">On-Grid</option>
+                    <option value="Off-Grid">Off-Grid</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="labelStyle" for="tipoLigacao">
+                    Selecione o tipo de ligação:
+                </label>
+
+                <select name="tipoLigacao" id="tipoLigacao">
+                    <option value="" selected></option>
+                    <option value="monofasico">Monofásico</option>
+                    <option value="bifasico">Bifásico</option>
+                    <option value="trifasico">Trifásico</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="labelStyle" for="consumoMensal">
+                    Informe seu consumo mensal (kWh):
+                </label>
+
+                <input type="text" id="consumoMensal" name="consumoMensal" min="0">
+            </div>
+
+            <div>
+                <label class="labelStyle" for="estado">
+                    Selecione seu município:
+                </label>
+
+                <select name="municipio" id="municipio">
+                    <option value="" selected></option>
+                    <option value="macapa">Macapá</option>
+                    <option value="santana">Santana</option>
+                    <option value="serraDoNavio">Serra do Navio</option>
+                </select>
+            </div>
+
+            <button type="submit" id="btn-calcular">CALCULAR</button>
+        </form>
+
+    </div>
+
+    <div class="container-resultado">
+        <div class="tipo-sistema"></div>
+        <div class="consumo"></div>
+        <div class="economia"></div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

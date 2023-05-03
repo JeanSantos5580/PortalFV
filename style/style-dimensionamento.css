@@ -1,0 +1,56 @@
+/* BODY */
+
+.mainTitle{
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding-top: 20px;
+    background-color: #003566;
+    padding: 20px 0px 20px 0px;
+}
+
+.container .mainTitle, form div{
+    padding: 10px;
+    gap: 10px;
+
+    color: #ffd60a;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-calcular {
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #ffc300;
+    transition: 0.5s ease-in-out;
+}
+
+#btn-calcular:hover{
+    background-color: #ffd60a;
+    border-radius: 20px;
+}
+
+.container-resultado {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+    background-color: #ffd60a;
+}
+
+.tipo-sistema, .consumo, .economia {
+    padding: 10px;
+}
